@@ -9,11 +9,14 @@ public class Janken {
 	   int b = sc.nextInt();
 	   if(a==b) {
 		   System.out.println("あいこ");
-	   }else if(a+2==b || a-1==b || a==1 && b==3 && a==2 && b==1) {
-	   System.out.println("後手の勝ち");
-       }else {
-    	   System.out.println("先手の勝ち");
-       }
+	   }else if(a==3 && b==1 || a+1==b) {
+		   System.out.println("先手の勝ち");
+	   }else {
+		   System.out.println("後手の勝ち");
+	   }
    }
 }
+
+
+
 
